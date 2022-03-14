@@ -24,6 +24,7 @@ module.exports = {
         filename: 'static/js/bundle.js',
         clean: true,
         publicPath: '/',
+        assetModuleFilename: 'static/assets/images/[hash][ext][query]'
     },
     resolve: {
         extensions: ['*', '.js']
@@ -77,12 +78,7 @@ module.exports = {
             },
             {
                 test: /\.(svg|gif|png|jpg|jpeg)$/,
-                use: [{
-                    loader: 'file-loader',
-                    options: {
-                        outputPath: 'static/assets',
-                    },
-                }]
+                type: 'asset/resource',
             }
         ],
     },

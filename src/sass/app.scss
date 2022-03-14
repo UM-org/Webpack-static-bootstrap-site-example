@@ -4,8 +4,19 @@
 @import "~bootstrap/scss/bootstrap";
 
 body{
-    color: $blue;
-    background-image: url(../assets/images/logo.png);
+    color: $grey;
     font-size: 18px;
     font-weight: normal;
+}
+h1, h2{
+    color: $blue;
+}
+main{
+    section {
+        .img-container{
+            img{
+                max-width: 80%;
+            }
+        }
+    }
 }

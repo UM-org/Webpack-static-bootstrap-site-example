@@ -1,5 +1,5 @@
 // HTML Pages 
-const basePath = 'public/pages';
+const basePath = 'src/pages';
 const htmlPages = [
     {
         name: "index.html",
