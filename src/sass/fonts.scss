@@ -1,0 +1,175 @@
+@font-face {
+  font-family: 'Magallanes';
+  src: url('../fonts/Magallanes/MagallanesExtraBold.eot');
+  src: local('Magallanes ExtraBold'), local('MagallanesExtraBold'),
+      url('../fonts/Magallanes/MagallanesExtraBold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Magallanes/MagallanesExtraBold.woff') format('woff'),
+      url('../fonts/Magallanes/MagallanesExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AllegraMagallanes';
+  src: url('../fonts/Magallanes/MagallanesLight-Italic.eot');
+  src: local('Magallanes Light Italic'), local('MagallanesLight-Italic'),
+      url('../fonts/Magallanes/MagallanesLight-Italic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Magallanes/MagallanesLight-Italic.woff') format('woff'),
+      url('../fonts/Magallanes/MagallanesLight-Italic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Magallanes';
+  src: url('../fonts/Magallanes/MagallanesLight.eot');
+  src: local('Magallanes Light'), local('MagallanesLight'),
+      url('../fonts/Magallanes/MagallanesLight.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Magallanes/MagallanesLight.woff') format('woff'),
+      url('../fonts/Magallanes/MagallanesLight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Magallanes';
+  src: url('../fonts/Magallanes/MagallanesBlack.eot');
+  src: local('Magallanes Black'), local('MagallanesBlack'),
+      url('../fonts/Magallanes/MagallanesBlack.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Magallanes/MagallanesBlack.woff') format('woff'),
+      url('../fonts/Magallanes/MagallanesBlack.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Magallanes';
+  src: url('../fonts/Magallanes/MagallanesExtraBold-Italic.eot');
+  src: local('Magallanes ExtraBold Italic'), local('MagallanesExtraBold-Italic'),
+      url('../fonts/Magallanes/MagallanesExtraBold-Italic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Magallanes/MagallanesExtraBold-Italic.woff') format('woff'),
+      url('../fonts/Magallanes/MagallanesExtraBold-Italic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Magallanes';
+  src: url('../fonts/Magallanes/MagallanesRegular.eot');
+  src: local('Magallanes Regular'), local('MagallanesRegular'),
+      url('../fonts/Magallanes/MagallanesRegular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Magallanes/MagallanesRegular.woff') format('woff'),
+      url('../fonts/Magallanes/MagallanesRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Magallanes';
+  src: url('../fonts/Magallanes/MagallanesMedium-Italic.eot');
+  src: local('Magallanes Medium Italic'), local('MagallanesMedium-Italic'),
+      url('../fonts/Magallanes/MagallanesMedium-Italic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Magallanes/MagallanesMedium-Italic.woff') format('woff'),
+      url('../fonts/Magallanes/MagallanesMedium-Italic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Magallanes';
+  src: url('../fonts/Magallanes/MagallanesBold.eot');
+  src: local('Magallanes Bold'), local('MagallanesBold'),
+      url('../fonts/Magallanes/MagallanesBold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Magallanes/MagallanesBold.woff') format('woff'),
+      url('../fonts/Magallanes/MagallanesBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Magallanes';
+  src: url('../fonts/Magallanes/MagallanesBold-Italic.eot');
+  src: local('Magallanes Bold Italic'), local('MagallanesBold-Italic'),
+      url('../fonts/Magallanes/MagallanesBold-Italic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Magallanes/MagallanesBold-Italic.woff') format('woff'),
+      url('../fonts/Magallanes/MagallanesBold-Italic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Magallanes';
+  src: url('../fonts/Magallanes/MagallanesRegular-Italic.eot');
+  src: local('Magallanes Regular Italic'), local('MagallanesRegular-Italic'),
+      url('../fonts/Magallanes/MagallanesRegular-Italic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Magallanes/MagallanesRegular-Italic.woff') format('woff'),
+      url('../fonts/Magallanes/MagallanesRegular-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Magallanes';
+  src: url('../fonts/Magallanes/MagallanesBlack-Italic.eot');
+  src: local('Magallanes Black Italic'), local('MagallanesBlack-Italic'),
+      url('../fonts/Magallanes/MagallanesBlack-Italic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Magallanes/MagallanesBlack-Italic.woff') format('woff'),
+      url('../fonts/Magallanes/MagallanesBlack-Italic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Magallanes';
+  src: url('../fonts/Magallanes/MagallanesMedium.eot');
+  src: local('Magallanes Medium'), local('MagallanesMedium'),
+      url('../fonts/Magallanes/MagallanesMedium.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Magallanes/MagallanesMedium.woff') format('woff'),
+      url('../fonts/Magallanes/MagallanesMedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Magallanes';
+  src: url('../fonts/Magallanes/MagallanesUltraLight.eot');
+  src: local('Magallanes UltraLight'), local('MagallanesUltraLight'),
+      url('../fonts/Magallanes/MagallanesUltraLight.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Magallanes/MagallanesUltraLight.woff') format('woff'),
+      url('../fonts/Magallanes/MagallanesUltraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Magallanes';
+  src: url('../fonts/Magallanes/MagallanesExtraLight-Italic.eot');
+  src: local('Magallanes ExtraLight Italic'), local('MagallanesExtraLight-Italic'),
+      url('../fonts/Magallanes/MagallanesExtraLight-Italic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Magallanes/MagallanesExtraLight-Italic.woff') format('woff'),
+      url('../fonts/Magallanes/MagallanesExtraLight-Italic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Magallanes';
+  src: url('../fonts/Magallanes/MagallanesExtraLight.eot');
+  src: local('Magallanes ExtraLight'), local('MagallanesExtraLight'),
+      url('../fonts/Magallanes/MagallanesExtraLight.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Magallanes/MagallanesExtraLight.woff') format('woff'),
+      url('../fonts/Magallanes/MagallanesExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Magallanes';
+  src: url('../fonts/Magallanes/MagallanesUltraLight-Italic.eot');
+  src: local('Magallanes UltraLight Italic'), local('MagallanesUltraLight-Italic'),
+      url('../fonts/Magallanes/MagallanesUltraLight-Italic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Magallanes/MagallanesUltraLight-Italic.woff') format('woff'),
+      url('../fonts/Magallanes/MagallanesUltraLight-Italic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+}

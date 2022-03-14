@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'Magallanes';
+    src: url('MagallanesExtraBold.eot');
+    src: local('Magallanes ExtraBold'), local('MagallanesExtraBold'),
+        url('MagallanesExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('MagallanesExtraBold.woff') format('woff'),
+        url('MagallanesExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AllegraMagallanes';
+    src: url('MagallanesLight-Italic.eot');
+    src: local('Magallanes Light Italic'), local('MagallanesLight-Italic'),
+        url('MagallanesLight-Italic.eot?#iefix') format('embedded-opentype'),
+        url('MagallanesLight-Italic.woff') format('woff'),
+        url('MagallanesLight-Italic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Magallanes';
+    src: url('MagallanesLight.eot');
+    src: local('Magallanes Light'), local('MagallanesLight'),
+        url('MagallanesLight.eot?#iefix') format('embedded-opentype'),
+        url('MagallanesLight.woff') format('woff'),
+        url('MagallanesLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Magallanes';
+    src: url('MagallanesBlack.eot');
+    src: local('Magallanes Black'), local('MagallanesBlack'),
+        url('MagallanesBlack.eot?#iefix') format('embedded-opentype'),
+        url('MagallanesBlack.woff') format('woff'),
+        url('MagallanesBlack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Magallanes';
+    src: url('MagallanesExtraBold-Italic.eot');
+    src: local('Magallanes ExtraBold Italic'), local('MagallanesExtraBold-Italic'),
+        url('MagallanesExtraBold-Italic.eot?#iefix') format('embedded-opentype'),
+        url('MagallanesExtraBold-Italic.woff') format('woff'),
+        url('MagallanesExtraBold-Italic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Magallanes';
+    src: url('MagallanesRegular.eot');
+    src: local('Magallanes Regular'), local('MagallanesRegular'),
+        url('MagallanesRegular.eot?#iefix') format('embedded-opentype'),
+        url('MagallanesRegular.woff') format('woff'),
+        url('MagallanesRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Magallanes';
+    src: url('MagallanesMedium-Italic.eot');
+    src: local('Magallanes Medium Italic'), local('MagallanesMedium-Italic'),
+        url('MagallanesMedium-Italic.eot?#iefix') format('embedded-opentype'),
+        url('MagallanesMedium-Italic.woff') format('woff'),
+        url('MagallanesMedium-Italic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Magallanes';
+    src: url('MagallanesBold.eot');
+    src: local('Magallanes Bold'), local('MagallanesBold'),
+        url('MagallanesBold.eot?#iefix') format('embedded-opentype'),
+        url('MagallanesBold.woff') format('woff'),
+        url('MagallanesBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Magallanes';
+    src: url('MagallanesBold-Italic.eot');
+    src: local('Magallanes Bold Italic'), local('MagallanesBold-Italic'),
+        url('MagallanesBold-Italic.eot?#iefix') format('embedded-opentype'),
+        url('MagallanesBold-Italic.woff') format('woff'),
+        url('MagallanesBold-Italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Magallanes';
+    src: url('MagallanesRegular-Italic.eot');
+    src: local('Magallanes Regular Italic'), local('MagallanesRegular-Italic'),
+        url('MagallanesRegular-Italic.eot?#iefix') format('embedded-opentype'),
+        url('MagallanesRegular-Italic.woff') format('woff'),
+        url('MagallanesRegular-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Magallanes';
+    src: url('MagallanesBlack-Italic.eot');
+    src: local('Magallanes Black Italic'), local('MagallanesBlack-Italic'),
+        url('MagallanesBlack-Italic.eot?#iefix') format('embedded-opentype'),
+        url('MagallanesBlack-Italic.woff') format('woff'),
+        url('MagallanesBlack-Italic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Magallanes';
+    src: url('MagallanesMedium.eot');
+    src: local('Magallanes Medium'), local('MagallanesMedium'),
+        url('MagallanesMedium.eot?#iefix') format('embedded-opentype'),
+        url('MagallanesMedium.woff') format('woff'),
+        url('MagallanesMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Magallanes';
+    src: url('MagallanesUltraLight.eot');
+    src: local('Magallanes UltraLight'), local('MagallanesUltraLight'),
+        url('MagallanesUltraLight.eot?#iefix') format('embedded-opentype'),
+        url('MagallanesUltraLight.woff') format('woff'),
+        url('MagallanesUltraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Magallanes';
+    src: url('MagallanesExtraLight-Italic.eot');
+    src: local('Magallanes ExtraLight Italic'), local('MagallanesExtraLight-Italic'),
+        url('MagallanesExtraLight-Italic.eot?#iefix') format('embedded-opentype'),
+        url('MagallanesExtraLight-Italic.woff') format('woff'),
+        url('MagallanesExtraLight-Italic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Magallanes';
+    src: url('MagallanesExtraLight.eot');
+    src: local('Magallanes ExtraLight'), local('MagallanesExtraLight'),
+        url('MagallanesExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('MagallanesExtraLight.woff') format('woff'),
+        url('MagallanesExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Magallanes';
+    src: url('MagallanesUltraLight-Italic.eot');
+    src: local('Magallanes UltraLight Italic'), local('MagallanesUltraLight-Italic'),
+        url('MagallanesUltraLight-Italic.eot?#iefix') format('embedded-opentype'),
+        url('MagallanesUltraLight-Italic.woff') format('woff'),
+        url('MagallanesUltraLight-Italic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+

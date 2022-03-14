@@ -1,0 +1,11 @@
+@import "mixins.scss";
+@import "fonts.scss";
+@import "variables";
+@import "~bootstrap/scss/bootstrap";
+
+body{
+    color: $blue;
+    background-image: url(../assets/images/logo.png);
+    font-size: 18px;
+    font-weight: normal;
+}
