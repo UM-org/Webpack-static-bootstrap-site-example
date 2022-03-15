@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const {
     merge
 } = require('webpack-merge');
@@ -10,7 +11,12 @@ module.exports = merge(common, {
     devServer: {
         static: './dist',
         compress: true,
-        hot: true,
+        hot: false,
+        client: false,
         port: 3000,
     },
+    plugins: [
+       // Plugin for hot module replacement
+       new webpack.HotModuleReplacementPlugin(),
+      ],
 });

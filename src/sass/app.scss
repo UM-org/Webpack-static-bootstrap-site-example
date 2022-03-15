@@ -1,6 +1,7 @@
 @import "mixins.scss";
 @import "fonts.scss";
 @import "variables";
+@import "fontawsome";
 @import "~bootstrap/scss/bootstrap";
 
 body{
@@ -11,12 +12,20 @@ body{
 h1, h2{
     color: $blue;
 }
+header{
+    .icon-wrapper{
+        background: $light-blue;
+        padding: .5rem 1rem;
+        color: $white;
+        border-radius: 50%;
+    }
+    nav{
+        background: $light-blue;
+        padding: 1rem;
+    }
+}
 main{
     section {
-        .img-container{
-            img{
-                max-width: 80%;
-            }
-        }
+
     }
 }

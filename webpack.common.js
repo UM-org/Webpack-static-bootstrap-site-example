@@ -24,7 +24,7 @@ module.exports = {
         filename: 'static/js/bundle.js',
         clean: true,
         publicPath: '/',
-        assetModuleFilename: 'static/assets/images/[hash][ext][query]'
+        assetModuleFilename: 'static/[hash][ext][query]'
     },
     resolve: {
         extensions: ['*', '.js']
@@ -38,14 +38,15 @@ module.exports = {
         }),
         new CopyPlugin({
             patterns: [{
-                from: "./public",
-                filter: async (resourcePath) => {
-                    if (path.extname(resourcePath) == ".html") {
-                        return false
-                    }
-                    return true
-                },
-            }, ],
+                    from: "./public",
+                    filter: async (resourcePath) => {
+                        if (path.extname(resourcePath) == ".html") {
+                            return false
+                        }
+                        return true
+                    },
+                }
+            ],
         }),
     ].concat(multipleHtmlPlugins),
     module: {
@@ -68,17 +69,18 @@ module.exports = {
                 ],
             },
             {
-                test: /\.(eot|woff|ttf)$/,
-                use: [{
-                    loader: 'file-loader',
-                    options: {
-                        outputPath: 'static/fonts',
-                    },
-                }]
+                test: /\.(eot|woff|ttf|woff2)$/,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'static/fonts/[hash][ext][query]'
+                }
             },
             {
                 test: /\.(svg|gif|png|jpg|jpeg)$/,
                 type: 'asset/resource',
+                generator: {
+                    filename: 'static/assets/images/[hash][ext][query]'
+                }
             }
         ],
     },

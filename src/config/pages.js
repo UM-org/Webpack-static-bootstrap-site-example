@@ -3,13 +3,8 @@ const basePath = 'src/pages';
 const htmlPages = [
     {
         name: "index.html",
-        title: "Webpack-static-site-example",
+        title: "Sinpar",
         path: ""
-    },
-    {
-        name: "example.html",
-        title: "Example",
-        path: "/examples"
     }
 ];
 

@@ -1,0 +1,9 @@
+$fa-font-path: "../fonts/webfonts"; // destination folder in dist
+//Adapt the path to be relative to your main.scss file
+@import "@fortawesome/fontawesome-free/scss/fontawesome";
+
+//Include at least one of the below, depending on what icons you want.
+//Adapt the path to be relative to your main.scss file
+@import "@fortawesome/fontawesome-free/scss/brands";
+@import "@fortawesome/fontawesome-free/scss/regular";
+@import "@fortawesome/fontawesome-free/scss/solid";
