@@ -23,7 +23,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'static/js/bundle.js',
         clean: true,
-        publicPath: '/',
+        publicPath: '',
         assetModuleFilename: 'static/[hash][ext][query]'
     },
     resolve: {

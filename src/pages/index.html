@@ -21,53 +21,61 @@
             <i class="fa-solid fa-phone"></i>
           </div>
           <div class="ps-2">
-            <a class="d-block text-decoration-none" href="phone:71380075">Tél : 79 396 212/71380075</a>
-            <a class="d-block text-decoration-none" href="phone:71380817">Fax : 79 396 214/71380817</a>
+            <a class="d-block text-decoration-none" href="phone:71380075">Tél : 79 396 212 / 71380075</a>
+            <a class="d-block text-decoration-none" href="phone:71380817">Fax : 79 396 214 / 71380817</a>
           </div>
         </div>
       </div>
     </div>
-    <nav>navbar</nav>
+    <nav class="py-4"></nav>
   </header>
-  <main class="container">
-    <section class="row">
-      <div class="col-12 col-md-6 title mt-5">
-        <h1 class="text-uppercase">Sinpar</h1>
-      </div>
-      <div class="col-12 col-md-6 img-container">
-        <img src="<%=require("../assets/images/camion.png")%>" class="w-100" alt="lorem5">
+  <main>
+    <section class="container">
+      <div class="row py-5">
+        <div class="col-12 col-md-6 title mt-5">
+          <h1 class="text-uppercase">Sinpar</h1>
+        </div>
+        <div class="col-12 col-md-6 img-container">
+          <img src="<%=require("../assets/images/camion.png")%>" class="w-100" alt="lorem5">
+        </div>
       </div>
     </section>
-    <section class="container">
+    <section class="container py-5">
       <h2 class="text-center text-uppercase mb-4">A propos de nous</h2>
       <p class="text-center">Depuis plus de 40 ans, la société SINAPR est devneu leader sur le marché du transport
         isotherme et firgorifique et des caisses aménagées. <br>
         Des solutions sur mesure répondant à tous les besoins, notre qualité est à la hauteur de toutes les exigences.
       </p>
     </section>
-    <section class="container">
-      <div class="row">
-        <div class="col-12 col-md-6 form-container p-4">
-          <h2 class="text-uppercase mb-4">Contacter nous</h2>
-          <form action="" class="w-100">
-            <div class="mb-3">
-              <input type="text" class="form-control" id="contact-name" placeholder="Nom et Prénom" name="name">
-            </div>
-            <div class="mb-3">
-              <input type="email" class="form-control" id="contact-email" placeholder="Email" name="email">
-            </div>
-            <div class="mb-3">
-              <textarea name="message" class="form-control" placeholder="Votre message" id="contact-message" cols="30"
-                rows="10"></textarea>
-            </div>
-
-          </form>
+    <section id="form-section" class="py-5">
+      <div class="container">
+        <div class="alerts-wrapper">
         </div>
-        <!-- 1:1 aspect ratio -->
-        <div class="col-12 col-md-6 embed-responsive embed-responsive-1by1 p-4">
-          <iframe class="embed-responsive-item w-100"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6235.18625482224!2d10.12305896224858!3d36.72634285403389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd318227298b4b%3A0x7ba558ba16fc4e0b!2sSinpar!5e0!3m2!1sen!2stn!4v1647280382571!5m2!1sen!2stn"
-            width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="row">
+          <div class="col-12 col-md-6 form-container p-4">
+            <h2 class="text-uppercase mb-4">Contacter nous</h2>
+            <form class="w-100">
+              <div class="mb-3">
+                <input type="text" class="form-control" id="contact-name" placeholder="Nom et Prénom" name="mail[name]">
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" id="contact-email" placeholder="Email" name="mail[email]">
+              </div>
+              <div class="mb-3">
+                <textarea name="mail[message]" class="form-control" placeholder="Votre message" id="contact-message"
+                  cols="30" rows="10"></textarea>
+              </div>
+              <div class="mb-3">
+                <button type="submit" class="col-12 col-md-2 offset-md-10 btn btn-primary">Envoyer</button>
+              </div>
+            </form>
+          </div>
+          <!-- 1:1 aspect ratio -->
+          <div class="col-12 col-md-6 embed-responsive embed-responsive-1by1 p-4">
+            <iframe class="embed-responsive-item w-100"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6235.18625482224!2d10.12305896224858!3d36.72634285403389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd318227298b4b%3A0x7ba558ba16fc4e0b!2sSinpar!5e0!3m2!1sen!2stn!4v1647280382571!5m2!1sen!2stn"
+              width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
         </div>
       </div>
     </section>
