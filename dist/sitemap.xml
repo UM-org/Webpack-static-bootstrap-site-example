@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://example.com/index.html</loc>
-        <lastmod>2022-03-02T15:32:30.298Z</lastmod>
-    </url>
-    <url>
-        <loc>http://example.com/examples/example.html</loc>
-        <lastmod>2022-03-02T15:33:06.346Z</lastmod>
+        <loc>https://www.sinpar.com/</loc>
+        <lastmod>2022-03-16T15:46:40.726Z</lastmod>
+        <priority>0.9</priority>
     </url>
 </urlset>

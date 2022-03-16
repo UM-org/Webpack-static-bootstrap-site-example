@@ -4,18 +4,21 @@ import {
 } from 'static-sitemap-cli';
 import * as fs from "fs";
 
+const site =process.env.SITE_URL ?? "https://example.com/";
+
 const options = {
-    base: process.env.SITE_URL ?? "https://example.com/",
-    root: './public/pages',
+    base: site,
+    root: './src/pages',
     match: ['**/*html'],
     ignore: ['404.html'],
     changefreq: [],
-    priority: [],
+    priority: [
+        "index.html,0.9"
+    ],
     robots: true,
     concurrent: 128,
-    clean: false,
+    clean: true,
     slash: false,
-    stdout: "./public"
 }
 
 generateUrls(options).then((urls) => {

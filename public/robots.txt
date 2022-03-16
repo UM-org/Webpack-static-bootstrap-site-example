@@ -1,4 +1,2 @@
 User-Agent: *
-Allow: /https://sinpar-marine.tn//
-Disallow: /https://sinpar-marine.tn/contact
-
+Allow: https://sinpar.tn

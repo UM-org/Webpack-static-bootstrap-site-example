@@ -15,6 +15,9 @@ let multipleHtmlPlugins = htmlPages.map(page => {
         title: page.title, // output HTML files
         filename: path.join(page.path, '/', page.name), // output HTML files
         template: path.join(basePath, '/', page.path, '/', page.name), // relative path to the HTML files
+        files: {
+            favicon: "favicon.ico"
+        }
     })
 });
 module.exports = {
