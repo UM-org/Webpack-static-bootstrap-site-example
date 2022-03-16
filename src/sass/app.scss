@@ -12,6 +12,9 @@ body{
 h1, h2{
     color: $blue;
 }
+.color-primary{
+    color:$blue;
+}
 header{
     .icon-wrapper{
         background: $light-blue;
