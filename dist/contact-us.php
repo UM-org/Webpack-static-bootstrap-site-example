@@ -7,15 +7,6 @@ require_once '../vendor/autoload.php';
 use Aws\Credentials\Credentials;
 use Aws\Ses\SesClient;
 
-// Replace these sample addresses with the addresses of your recipients. If
-// your account is still in the sandbox, these addresses must be verified.
-$recipient_emails = ['hassen@ulysse.media'];
-
-// Specify a configuration set. If you do not want to use a configuration
-// set, comment the following variable, and the
-// 'ConfigurationSetName' => $configuration_set argument below.
-$configuration_set = '';
-
 function sanitize_my_email($field)
 {
     $field = filter_var($field, FILTER_SANITIZE_EMAIL);
@@ -49,6 +40,10 @@ function sesMail($body)
     // using an AWS Region other than US West (Oregon). Change the value of the
     // profile parameter if you want to use a profile in your credentials file
     // other than the default.
+    $body['Destination'] = [
+        'ToAddresses' => [$_ENV['CONTACT_MAIL_ADDRESS'] ?? "hassen@ulysse.media"],
+    ];
+    $body['Source'] = $_ENV['MAIL_FROM_ADDRESS'] ?? "noreply@sinpar.tn";
     try {
         $SesClient = new SesClient([
             'version' => '2010-12-01',
@@ -67,21 +62,13 @@ if (isset($_POST['mail'])) {
         $mailData[$key] = strip_tags($value);
     }
     if (empty(validateData($mailData))) {
-        // try {
-        // Replace sender@example.com with your "From" address.
-        // This address must be verified with Amazon SES.
-        $sender_email = 'noreply@sinpar.tn';
         $subject = 'Contact';
         $html_body = "<p>Cet email a été envoyé par le site web via le formulaire de contact.</p><ul><li>Nom: {$mailData['name']}
         </li><li>Email: <a href='mailto:{$mailData['email']}'>{$mailData['email']}</a></li>
         <li>Message: <div>{$mailData['message']}</div>
         </li></ul>";
         $body = [
-            'Destination' => [
-                'ToAddresses' => $recipient_emails,
-            ],
             'ReplyToAddresses' => [$mailData['email']],
-            'Source' => $sender_email,
             'Message' => [
                 'Body' => [
                     'Html' => [
