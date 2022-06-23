@@ -5,9 +5,7 @@ $(function () {
     $(".form-container form").submit(function (e) {
         e.preventDefault();
         const form = $(this).serialize();
-        $(".form-container form button[type=submit]").html(`<div class="spinner-border" role="status">
-        <span class="sr-only">Loading...</span>
-      </div>`)
+        $(".form-container form button[type=submit]").html(`<div class="spinner-border" role="status"></div>`)
         $.ajax({
             url: "./contact-us.php",
             method: 'POST',

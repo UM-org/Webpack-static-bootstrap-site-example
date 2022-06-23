@@ -4,8 +4,7 @@
 // location of your Composer autoload.php file.
 require_once '../vendor/autoload.php';
 
-use Aws\Credentials\Credentials;
-use Aws\Ses\SesClient;
+use PHPMailer\PHPMailer\PHPMailer;
 
 function sanitize_my_email($field)
 {
@@ -31,61 +30,40 @@ function validateData($data)
     return $errors;
 
 }
-function sesMail($body)
-{
-    $dotenv = \Dotenv\Dotenv::createImmutable("C:/Program Files/xampp/htdocs/sinpar");
-    $dotenv->safeLoad();
-    $credentials = new Credentials($_ENV['AWS_ACCESS_KEY_ID'], $_ENV['AWS_SECRET_ACCESS_KEY']);
-    // Create an SesClient. Change the value of the region parameter if you're
-    // using an AWS Region other than US West (Oregon). Change the value of the
-    // profile parameter if you want to use a profile in your credentials file
-    // other than the default.
-    $body['Destination'] = [
-        'ToAddresses' => [$_ENV['CONTACT_MAIL_ADDRESS'] ?? "hassen@ulysse.media"],
-    ];
-    $body['Source'] = $_ENV['MAIL_FROM_ADDRESS'] ?? "noreply@sinpar.tn";
-    try {
-        $SesClient = new SesClient([
-            'version' => '2010-12-01',
-            'region' => 'eu-west-1',
-            'credentials' => $credentials,
-        ]);
-        $result = $SesClient->sendEmail($body);
-        return $result['MessageId'];
-    } catch (\Throwable $th) {
-        return false;
-    }
-}
 if (isset($_POST['mail'])) {
     $mailData = $_POST['mail'];
     foreach ($mailData as $key => $value) {
         $mailData[$key] = strip_tags($value);
     }
     if (empty(validateData($mailData))) {
-        $subject = 'Contact';
-        $html_body = "<p>Cet email a été envoyé par le site web via le formulaire de contact.</p><ul><li>Nom: {$mailData['name']}
-        </li><li>Email: <a href='mailto:{$mailData['email']}'>{$mailData['email']}</a></li>
-        <li>Message: <div>{$mailData['message']}</div>
-        </li></ul>";
-        $body = [
-            'ReplyToAddresses' => [$mailData['email']],
-            'Message' => [
-                'Body' => [
-                    'Html' => [
-                        'Charset' => "UTF-8",
-                        'Data' => $html_body,
-                    ],
-                ],
-                'Subject' => [
-                    'Charset' => "UTF-8",
-                    'Data' => $subject,
-                ],
-            ],
-        ];
-        $result = sesMail($body);
-        if($result){
+        try {
+            $dotenv = \Dotenv\Dotenv::createImmutable(__DIR__ . "/..");
+            $dotenv->safeLoad();
+            $mail = new PHPMailer;
+            $mail->isSMTP();
+            $mail->Host = $_ENV['MAIL_HOST'];
+            $mail->SMTPAuth = true;
+            $mail->Username = $_ENV['MAIL_USERNAME'];
+            $mail->Password = $_ENV['MAIL_PASSWORD'];
+            $mail->SMTPSecure = $_ENV['MAIL_ENCRYPTION'];
+            $mail->Port = $_ENV['MAIL_PORT'];
+
+            $mail->setFrom($_ENV['MAIL_FROM_ADDRESS'], 'No reply');
+            $mail->addReplyTo($mailData['email'], $mailData['name']);
+            $mail->addAddress($_ENV['MAIL_TO_ADDRESS'], 'Sinpar Team');
+
+            $mail->isHTML(true);
+            $mail->CharSet = 'UTF-8';
+
+            $mail->Subject = 'Demande de contact';
+            $mail->Body = "<h1 style='text-align:center; margin:20px auto'>Demande de contact</h1><ul><li style='padding: 10px 5px'>Nom: {$mailData['name']}
+        </li><li style='padding: 10px 5px'>Email: <a href='mailto:{$mailData['email']}'>{$mailData['email']}</a></li>
+        <li style='padding: 10px 5px'>Message: <div style='padding: 20px 5px'>{$mailData['message']}</div>
+        </li></ul><em style='text-align:center'>Cet email a été envoyé via le formulaire de contact de site web.</em>";
+            $mail->send();
             echo json_encode("sent");
-        }else{
+        } catch (Exception $e) {
+            // output error message if fails
             echo json_encode("fail");
         }
     } else {
