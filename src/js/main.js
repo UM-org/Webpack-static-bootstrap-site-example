@@ -1,6 +1,5 @@
 import $ from "jquery";
 
-
 $(function () {
     $(".form-container form").submit(function (e) {
         e.preventDefault();

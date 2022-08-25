@@ -25,7 +25,7 @@ function validateData($data)
         $errors['message'] = 'Please enter a message';
     }
     if (!sanitize_my_email($data['email'])) {
-        $errors['email'] = 'Please enter a valid email adress';
+        $errors['email'] = 'Please enter a valid email address';
     }
     return $errors;
 

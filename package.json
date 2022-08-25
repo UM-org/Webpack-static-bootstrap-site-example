@@ -1,10 +1,10 @@
 {
-  "name": "Sinpar",
+  "name": "Webpack-static-bootstrap-site-example",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --config webpack.dev.js",
+    "start": "webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "prebuild": "node -r dotenv/config src/tools/sitemap/generate.mjs dotenv_config_path=./.env dotenv_config_debug=true",
     "check-env": "node -e console.log(process.env)",

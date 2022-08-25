@@ -3,7 +3,7 @@ const basePath = 'src/pages';
 const htmlPages = [
     {
         name: "index.html",
-        title: "Sinpar",
+        title: "Index",
         path: ""
     }
 ];
